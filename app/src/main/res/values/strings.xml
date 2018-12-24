@@ -1,0 +1,128 @@
+<resources>
+
+    <string name="app_name">EzSmarty</string>
+    <string name="connect">Connect</string>
+    <string name="setting">Settings</string>
+    <string name="synchronize">Synchronize</string>
+    <string name="hello"></string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="scanning">Scanning for devices ...</string>
+    <string name="title_other_devices">Other available devices</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    <string name="ime_name">PMSync Keyboard</string>
+    <string name="sync_preferences">Synchronization settings</string>
+    <string name="title_timestamp_preference">Attach Timestamp</string>
+    <string name="summary_timestamp_preference">Attach barcode timestamp</string>
+    <string name="title_serial_preference">Attach Serial Number</string>
+    <string name="summary_serial_preference">Attach PM3 serial number</string>
+    <string name="title_barcodetype_preference">Attach Barcode Type</string>
+    <string name="summary_barcodetype_preference">Attach barcode type</string>
+    <string name="Barcode_scan"> Barcode scan</string>
+
+
+
+    <string name="title_record_preference">Record Delimiter</string>
+    <string name="summary_record_preference">Choose delimiter of each record</string>
+    <string name="dialog_title_record_preference">Choose one</string>
+
+
+
+
+    <string name="scan_settings_title">Barcode Scanner</string>
+    <string name="basic_setting">BASIC</string>
+    <string name="notification_setting">NOTIFICATION</string>
+    <string name="wedge_setting">WEDGE</string>
+    <string name="symbologies_setting">SYMBOLOGIES</string>
+    <string name="detail_setting">DETAIL</string>
+    <string name="about_setting">ABOUT</string>
+    <string name="action_settings">Settings</string>
+    <string name="symbologies_enable_all">Enable All</string>
+    <string name="symbologies_disable_all">Disable All</string>
+    <string name="detail_symbology">Barcode ID</string>
+    <string name="detail_sym_enable">Enable this code</string>
+    <string name="detail_barcode_id">Barcode ID</string>
+    <string name="detail_length">Length</string>
+    <string name="detail_length_min">Min</string>
+    <string name="detail_length_max">Max</string>
+    <string name="detail_redundancy">Redundancy</string>
+    <string name="detail_OCR_setting">OCR String Setting</string>
+    <string name="detail_OCR_template">OCRTemplate</string>
+    <string name="detail_OCR_group_g">OCRGroupG</string>
+    <string name="detail_OCR_group_h">OCRGroupH</string>
+    <string name="detail_OCR_check_char">OCRCheckChar</string>
+    <string name="detail_set_OCR_setting">Set OCR String Setting</string>
+    <string name="detail_properties">Properties</string>
+    <string name="about_default">Scanner factory default</string>
+    <string name="about_default_msg">Scanner will be Changed to factory default state.</string>
+    <string name="default_beep">Default</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+
+
+
+
+
+    <string-array name="entries_record_preference">
+        <item>NONE</item>
+        <item>LF</item>
+        <item>CR</item>
+        <item>TAB</item>
+        <item>CR+LF</item>
+    </string-array>
+    <string-array name="entryvalues_record_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="title_data_preference">Data Delimiter</string>
+    <string name="summary_data_preference">Choose delimiter of each data</string>
+    <string name="dialog_title_data_preference">Choose one</string>
+
+    <string-array name="entries_data_preference">
+        <item>NONE</item>
+        <item>TAB</item>
+        <item>SPACE</item>
+        <item>COMMA</item>
+        <item>SEMICOLON</item>
+    </string-array>
+    <string-array name="entryvalues_data_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="clear">Clear</string>
+    <string name="syncsettings">Sync Settings</string>
+    <string name="info">PM3 Information</string>
+    <string name="title_serialno_preference">Serial Number/FW Version</string>
+    <string name="version">PMSync for Android Version 1.1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="음성"><u>음성</u></string>
+
+</resources>

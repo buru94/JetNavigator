@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+
+        <Button
+                android:layout_width="250dp"
+                android:text="일반배송"
+                android:id="@+id/TRANS_FRAGMENT_NORMAL_TRANS_BTN"
+                android:background="@drawable/button"
+                android:clickable="true"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="조회전용"
+                android:id="@+id/TRANS_FRAGMENT_SEARCH_BTN"
+                android:layout_below="@+id/TRANS_FRAGMENT_NORMAL_TRANS_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="강제배송"
+                android:id="@+id/TRANS_FRAGMENT_DIRECT_TRANS_BTN"
+                android:layout_below="@+id/TRANS_FRAGMENT_SEARCH_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="상품별스캔"
+                android:id="@+id/TRANS_FRAGMENT_PRODUCT_SCAN_BTN"
+                android:layout_below="@+id/TRANS_FRAGMENT_DIRECT_TRANS_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

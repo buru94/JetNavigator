@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="버튼"/>
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"></Spinner>
+    <ToggleButton android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ListView android:layout_width="match_parent" android:layout_height="wrap_content"></ListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/SHEET_LIST_ACTIVITY_ADD_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

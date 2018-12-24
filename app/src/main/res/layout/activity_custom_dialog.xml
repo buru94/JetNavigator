@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FF2052" />
+
+        <TextView
+            android:id="@+id/CUSTOM_DIALOG_ACTIVITY_TITLE_TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/CUSTOM_DIALOG_ACTIVITY_BODY_TEXT_VIEW"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/CUSTOM_DIALOG_ACTIVITY_TITLE_TEXT_VIEW"
+            android:textColor="@color/black"
+            android:gravity="center_vertical|start"
+            android:layout_marginLeft="15dp"
+            android:textSize="10sp"/>
+        <LinearLayout
+                android:layout_below="@id/CUSTOM_DIALOG_ACTIVITY_BODY_TEXT_VIEW"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/CUSTOM_DIALOG_ACTIVITY_SUMMIT_BUTTON"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:text="확 인" />
+        <Button
+                android:id="@+id/CUSTOM_DIALOG_ACTIVITY_CANCEL_BUTTON"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:text="취 소"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

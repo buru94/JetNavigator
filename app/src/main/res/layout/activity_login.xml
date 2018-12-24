@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF2052"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/LOGIN_ACTIVITY_LOGIN_TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/LOGIN_ACTIVITY_DOMAIN_EDIT_TEXT"
+            style="@style/EditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LOGIN_ACTIVITY_LOGIN_TEXT_VIEW"
+            android:background="@drawable/round"
+            android:hint="도메인"
+            android:paddingVertical="10dp" />
+
+        <EditText
+            android:id="@+id/LOGIN_ACTIVITY_ID_EDIT_TEXT"
+            style="@style/EditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LOGIN_ACTIVITY_DOMAIN_EDIT_TEXT"
+            android:background="@drawable/round"
+            android:cursorVisible="true"
+            android:hint="아이디"
+            android:paddingVertical="10dp" />
+
+        <EditText
+            android:id="@+id/LOGIN_ACTIVITY_PASSWORD_EDIT_TEXT"
+            style="@style/EditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LOGIN_ACTIVITY_ID_EDIT_TEXT"
+            android:background="@drawable/round"
+            android:hint="패스워드"
+            android:paddingVertical="10dp" />
+
+        <Button
+            android:id="@+id/LOGIN_ACTIVITY_LOGIN_BTN"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LOGIN_ACTIVITY_PASSWORD_EDIT_TEXT"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_activity_button"
+            android:paddingVertical="10dp"
+            android:onClick="doClick"
+            android:text="LOGIN" />
+
+        <ImageView
+            android:id="@+id/LOGIN_ACTIVITY_LOGO_IMAGE_VIEW"
+            android:layout_width="167dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/LOGIN_ACTIVITY_LOGIN_BTN"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo_ezadmin" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

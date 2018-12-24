@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/SEARCH_LIST_VIEW_ITEM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/SEARCH_LIST_IMAGEVIEW"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/SEARCH_LIST_PRNAME_TEXTVIEW"
+                android:layout_toRightOf="@id/SEARCH_LIST_IMAGEVIEW"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                style="@style/SearchListItemTextView"/>
+        <TextView
+                android:id="@+id/SEARCH_LIST_OPTION_TEXTVIEW"
+                android:layout_below="@id/SEARCH_LIST_PRNAME_TEXTVIEW"
+                android:layout_toRightOf="@+id/SEARCH_LIST_IMAGEVIEW"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                style="@style/SearchListItemTextView"/>
+
+        <TextView
+                android:id="@+id/SEARCH_LIST_BARCODE_TEXTVIEW"
+                android:layout_toRightOf="@id/SEARCH_LIST_OPTION_TEXTVIEW"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                style="@style/SearchListItemTextView"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

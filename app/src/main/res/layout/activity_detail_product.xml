@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_SWIFE_REFRESH_LAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+
+        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_COORDINATOR_LAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_APP_BAR_LAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            android:fitsSystemWindows="true"
+            android:background="?colorPrimary">
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                app:expandedTitleMarginStart="72dp"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                    android:id="@+id/DETAIL_PRODUCT_MAIN_IMAGEVIEW"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="parallax"
+                    android:scaleType="centerCrop"/>
+
+
+            <TextView
+                    android:id="@+id/DETAIL_PRODUCT_ACTIVITY_SOLDOUT_TEXTVIEW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="품 절"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="250dp"/>
+
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/DETAIL_PRODUCT_ACTIVITY_TOOLBAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:contentInsetStart="72dp"
+                    app:layout_collapseMode="parallax"/>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_SCROLLVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LINEAR_LAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/DETAIL_PRODUCT_ACTIVITY_RELATIVE_LAYOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME"
+                        android:textColor="@color/white"
+                        android:background="@color/pink"
+                        android:focusedByDefault="true"
+                        android:paddingLeft="15dp"
+                        android:gravity="center_vertical|left"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_PRICE"
+                        android:layout_toRightOf="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/pink"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_EXPLAIN_TEXTVIEW"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME"
+                        android:textColor="@color/black"
+                        android:background="@drawable/textview_rectangle"
+                        android:paddingBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:text="상품 설명"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_DATE"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_EXPLAIN_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME_TEXTVIEW"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_DATE"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ellipsize="marquee"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_DATE"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="상품명"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ID_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_NAME_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:textColor="@color/black"
+                        android:text="상품코드"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LINK_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ID_TEXTVIEW"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ID_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:text="연동코드"
+                        android:layout_marginBottom="-4dp"
+                        android:gravity="center"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ORIGIN_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LINK_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LINK_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:textColor="@color/black"
+                        android:text="원산지"
+                        android:background="@drawable/imageview_rectangle"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_SUPPLY_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ORIGIN_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_ORIGIN_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="공급처"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LOC_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_SUPPLY_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_SUPPLY_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="로케이션"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_MADE_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LOC_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_LOC_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="제조사"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_TAG_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_MADE_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_MADE_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="상품태그"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_CATEGORY_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_TAG_TEXTVIEW"
+                        android:textColor="@color/black"
+                        android:background="@drawable/imageview_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/DetailProductTextView"/>
+                <TextView
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_TAG_TEXTVIEW"
+                        android:background="@drawable/imageview_rectangle"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="-4dp"
+                        android:text="카테고리"
+                        android:gravity="center"
+                        android:layout_width="62dp"
+                        android:layout_height="40dp"/>
+                <TextView
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_END_LINE"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_PRODUCT_CATEGORY_TEXTVIEW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/textview_rectangle"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                <RelativeLayout
+                        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_HEADER"
+                        android:background="@color/pink"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_END_LINE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_ID"
+                            android:gravity="center"
+                            android:text="상품코드"
+                            android:textStyle="bold"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_BARCODE"
+                            android:text="바코드"
+                            android:layout_below="@id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_ID"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_OPTION"
+                            android:text="옵션"
+                            android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_ID"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="155dp"
+                            android:layout_height="40dp"/>
+
+                    <TextView
+                            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_SOLDOUT"
+                            android:text="품절"
+                            android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_OPTION"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="65dp"
+                            android:layout_height="40dp"/>
+
+                    <TextView
+                            android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_CURRENT_STOCK"
+                            android:text="현재고"
+                            android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_PRODUCT_SOLDOUT"
+                            android:textStyle="bold"
+                            android:gravity="left|center_vertical"
+                            android:layout_width="75dp"
+                            android:layout_height="40dp"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ListView
+                    android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LISTVIEW"
+                    android:layout_below="@+id/DETAIL_PRODUCT_ACTIVITY_HEADER"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="300dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA">
+    <RelativeLayout
+            android:id="@+id/MAIN_ACTIVITY_RELATIVE_LAYOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bar_main_lable">
+
+        <TextView
+                android:id="@+id/MAIN_ACTIVITY_BARCODE_SCAN_TEXT_VIEW"
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"/>
+        <TextView
+                android:id="@+id/MAIN_ACTIVITY_BARCODE_GUIDE_TEXT_VIEW"
+                android:text="PM3 테스트"
+                android:textSize="15dp"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:layout_width="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/MAIN_ACTIVITY_BARCODE_SCAN_TEXT_VIEW"
+                android:layout_height="20dp"/>
+        <Button
+                android:id="@+id/MAIN_ACTIVITY_SEARCH_PM3_BTN"
+                android:layout_toRightOf="@+id/MAIN_ACTIVITY_BARCODE_SCAN_TEXT_VIEW"
+                android:layout_marginTop="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#353535"
+                android:textColor="@color/white"
+                android:text="PM3 찾기"/>
+    </RelativeLayout>
+
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/my_nav_host_fragment"
+            android:layout_marginTop="160dp"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/navigation_test"
+            app:defaultNavHost="true"/>
+</RelativeLayout>
+    <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

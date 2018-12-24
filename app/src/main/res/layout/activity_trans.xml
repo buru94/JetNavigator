@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+            android:text="송장 : "
+            android:id="@+id/TRANS_ACTIVITY_INVOICE_SERACH_TITLE_TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="40dp"/>
+    <EditText
+            android:id="@+id/TRANS_ACTIVITY_INVOICE_SEARCH_EDIT_TEXT"
+            android:layout_toRightOf="@+id/TRANS_ACTIVITY_INVOICE_SERACH_TITLE_TEXT_VIEW"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    <TextView
+            android:text="결과 : "
+            android:id="@+id/TRANS_ACTIVITY_RESULT_TEXT_VIEW"
+            android:layout_below="@id/TRANS_ACTIVITY_INVOICE_SERACH_TITLE_TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="40dp"/>
+    <EditText
+            android:id="@+id/TRANS_ACTIVITY_RESULT_EDIT_TEXT"
+            android:layout_toRightOf="@+id/TRANS_ACTIVITY_RESULT_TEXT_VIEW"
+            android:layout_below="@+id/TRANS_ACTIVITY_INVOICE_SEARCH_EDIT_TEXT"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    <Button
+            android:id="@+id/TRANS_ACTIVITY_INVOICE_SEARCH_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/TRANS_ACTIVITY_RESERVE_CANCEL_BTN"
+            android:layout_below="@+id/TRANS_ACTIVITY_RESULT_EDIT_TEXT"/>
+
+    <Button
+            android:id="@+id/TRANS_ACTIVITY_RESET_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/TRANS_ACTIVITY_RESULT_EDIT_TEXT" />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CS내역보기"
+            android:id="@+id/TRANS_ACTIVITY_CS_LIST_BTN"
+            android:layout_below="@+id/TRANS_ACTIVITY_RESULT_EDIT_TEXT"
+            android:layout_toRightOf="@+id/TRANS_ACTIVITY_RESET_BTN"/>
+
+
+    <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="보류해제"
+            android:id="@+id/TRANS_ACTIVITY_RESERVE_CANCEL_BTN"
+            android:layout_toRightOf="@id/TRANS_ACTIVITY_CS_LIST_BTN"
+            android:layout_below="@+id/TRANS_ACTIVITY_RESULT_EDIT_TEXT"/>
+
+    <RelativeLayout
+            android:id="@+id/TRANS_ACTIVITY_LIST_VIEW_HEADER"
+            android:layout_below="@+id/TRANS_ACTIVITY_RESERVE_CANCEL_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#D81B60">
+
+        <TextView
+                android:id="@+id/TRANS_ACTIVITY_LIST_HEADER_PRNAME"
+                android:layout_marginLeft="40dp"
+                android:text="상품명/옵션"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="20dp" android:layout_marginTop="0dp" android:layout_alignParentTop="true"/>
+
+        <TextView
+                android:id="@+id/TRANS_ACTIVITY_LIST_HEADER_BARCODE"
+                android:layout_toRightOf="@+id/TRANS_ACTIVITY_LIST_HEADER_PRNAME"
+                android:text="바코드"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="90dp"
+                android:layout_height="20dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/TRANS_ACTIVITY_LIST_VIEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:layout_below="@+id/TRANS_ACTIVITY_LIST_VIEW_HEADER">
+
+    </ListView>
+
+
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

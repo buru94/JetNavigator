@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.pimz.jetnavigator">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ezadmin_title_logo"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity android:name=".SplashActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+                  android:label="LOGIN"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name="com.example.pimz.jetnavigator.DeviceListActivity"
+                  android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth"/>
+        <activity android:name=".TransSearchActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".StockInOutActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".StockArrangeActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".StockCheckActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".StockLogActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".LOC_StockOrderActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".LOC_StockActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".Product_LOC_Activity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".Product_LOC_CheckActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".ProductListActivity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".ProductSearchActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".SettingsActivity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".StockEzChainActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".DetailProductActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".TransActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".TransForceActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".TransProductScanActivity"
+                  android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".CsInfoActivity"
+                  android:theme="@style/Theme.AppCompat.Dialog.MinWidth"/>
+        <activity android:name=".SheetListActivity"
+                  android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".AddStockSheetActivity"
+                  android:theme="@style/customDialogTheme"/>
+        <activity android:name=".StockScanProductModify"
+                  android:theme="@style/customDialogTheme"/>
+        <activity android:name=".LOCLogActivity"
+                  android:theme="@style/Theme.AppCompat.Dialog.MinWidth"/>
+    </application>
+</manifest>

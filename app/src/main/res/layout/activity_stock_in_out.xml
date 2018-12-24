@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        <LinearLayout
+                android:background="@color/gray"
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_SHEET_LINEARLAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:text="전      표"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/STOCK_IN_OUT_ACTIVITY_SHEET_TITLE_TEXT_VIEW"
+                    android:layout_width="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical|left"
+                    android:layout_height="50dp"/>
+            <TextView
+                    android:id="@+id/STOCK_IN_OUT_ACTIVITY_SHEET_TEXTVIEW"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:gravity="left|center_vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_white_box"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:background="@color/gray"
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_LINEARLAYOUT"
+                android:layout_below="@+id/STOCK_IN_OUT_ACTIVITY_SHEET_LINEARLAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+                android:text="바 코 드"
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_RESULT_TITLE_TEXT_VIEW"
+                android:layout_width="50dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:layout_height="50dp"/>
+        <EditText
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_RESULT_EDIT_TEXT"
+                android:layout_toRightOf="@+id/STOCK_IN_OUT_ACTIVITY_RESULT_TITLE_TEXT_VIEW"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_white_box"/>
+        <Button
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_SEARCH_BTN"
+                android:textColor="@color/black"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="조회"
+                android:layout_toRightOf="@+id/STOCK_IN_OUT_ACTIVITY_RESULT_EDIT_TEXT"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_HEADER_LINEARLAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_below="@+id/STOCK_IN_OUT_ACTIVITY_LINEARLAYOUT">
+        <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="20dp"
+                android:text="이미지"
+                android:gravity="center"
+                android:layout_weight="2"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="상품명 / 옵션"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical|right"
+                    android:text="수량"
+                    android:paddingRight="10dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"/>
+        </LinearLayout>
+
+
+        <ListView
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_LIST_VIEW"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:drawSelectorOnTop="false"
+                android:layout_height="430dp"
+
+                android:layout_below="@+id/STOCK_IN_OUT_ACTIVITY_HEADER_LINEARLAYOUT">
+        </ListView>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_COMPLETE_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="작업완료"/>
+        <Button
+                android:id="@+id/STOCK_IN_OUT_ACTIVITY_RESET_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="초기화"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

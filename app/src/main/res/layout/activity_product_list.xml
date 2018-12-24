@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/PRODUCT_LIST_ACTIVITY_LINEARLAYOUT"
+            android:background="#484848"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Spinner
+                android:id="@+id/PRODUCT_LIST_ACTIVITY_SPINNER"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"/>
+        <EditText
+                android:id="@+id/PRODUCT_LIST_ACTIVITY_EDITTEXT"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginRight="-10dp"
+                android:layout_width="190dp"
+                android:layout_height="40dp"/>
+        <ImageButton
+                android:id="@+id/PRODUCT_LIST_SEARCH_BTN"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search"
+                android:layout_width="wrap_content"
+                android:onClick="doClick"
+                android:layout_height="50dp"/>
+    </LinearLayout>
+        <GridView
+                android:id="@+id/PRODUCT_LIST_ACTIVITY_GRIDVIEW"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:numColumns="3"
+                android:scrollbars="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_below="@+id/PRODUCT_LIST_ACTIVITY_LINEARLAYOUT"
+                android:layout_marginTop="10dp">
+
+        </GridView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

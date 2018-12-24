@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_ID"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_BARCODE"
+                android:layout_below="@id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_ID"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_OPTION"
+                android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_ID"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="155dp"
+                android:layout_height="40dp"/>
+
+<LinearLayout
+        android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_IMAGE_LAYOUT"
+        android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_OPTION"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+        <ImageView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_SOLDOUT"
+                android:textStyle="bold"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_TEMPORARILY_SOLDOUT"
+                android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_BARCODE"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"/>
+</LinearLayout>
+
+        <TextView
+                android:id="@+id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_PRODUCT_CURRENT_STOCK"
+                android:layout_toRightOf="@id/DETAIL_PRODUCT_ACTIVITY_LIST_ITEM_IMAGE_LAYOUT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="75dp"
+                android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

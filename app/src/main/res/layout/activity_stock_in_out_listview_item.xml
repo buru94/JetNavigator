@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/STOCK_IN_OUT_LISTVIEW_ITEM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/STOCK_IN_OUT_LISTVIEW_ITEM_IMAGEVIEW"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="60dp"/>
+
+        <TextView
+                android:id="@+id/STOCK_IN_OUT_LISTVIEW_ITEM_PRNAME_TEXTVIEW"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/STOCK_IN_OUT_LISTVIEW_ITEM_IMAGEVIEW"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|left"/>
+
+        <TextView
+                android:id="@+id/STOCK_IN_OUT_LISTVIEW_ITEM_OPTION_TEXTVIEW"
+                android:layout_below="@id/STOCK_IN_OUT_LISTVIEW_ITEM_PRNAME_TEXTVIEW"
+                android:layout_toRightOf="@+id/STOCK_IN_OUT_LISTVIEW_ITEM_IMAGEVIEW"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:layout_width="240dp"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|left"/>
+
+        <TextView
+                android:id="@+id/STOCK_IN_OUT_LISTVIEW_ITEM_COUNT_TEXTVIEW"
+                android:layout_toRightOf="@id/STOCK_IN_OUT_LISTVIEW_ITEM_OPTION_TEXTVIEW"
+                android:textSize="13dp"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:gravity="right|center_vertical"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/app"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteY="141dp" tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints">
+
+        <Button
+                android:layout_width="250dp"
+                android:text="LOC입고지시"
+                android:textColor="@color/white"
+                android:id="@+id/LOC_STOCK_FRAGMENT_LOC_IN_DIRECTON_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+
+
+        <Button
+                android:layout_width="250dp"
+                android:text="LOC출고지시"
+                android:id="@+id/LOC_STOCK_FRAGMENT_LOC_OUT_DIRECTION_BTN"
+                android:layout_below="@+id/LOC_STOCK_FRAGMENT_LOC_IN_DIRECTON_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="LOC재고입고"
+                android:id="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_IN_BTN"
+                android:layout_below="@+id/LOC_STOCK_FRAGMENT_LOC_OUT_DIRECTION_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="LOC재고출고"
+                android:id="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_OUT_BTN"
+                android:layout_below="@id/LOC_STOCK_FRAGMENT_LOC_STOCK_IN_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="170dp"
+                android:text="LOC재고실사"
+                android:id="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_CHECK_BTN"
+                android:layout_below="@id/LOC_STOCK_FRAGMENT_LOC_STOCK_OUT_BTN"
+                android:layout_alignLeft="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_IN_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="80dp"
+                android:text="전표생성"
+                android:id="@+id/LOC_STOCK_FRAGMENT_MAKE_STATEMENT_BTN"
+                android:layout_toRightOf="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_CHECK_BTN"
+                android:layout_below="@+id/LOC_STOCK_FRAGMENT_LOC_STOCK_OUT_BTN"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

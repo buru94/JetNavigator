@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/SETTING_ACTIVITY_SOUND_TEXTVIEW"
+                android:text="음 성"
+                android:background="@drawable/textview_rectangle"
+                android:textSize="30dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="220dp"
+                android:layout_height="50dp"/>
+        <RadioGroup
+                android:id="@+id/SETTING_ACTIVITY_RADIO_GROUP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/SETTING_ACTIVITY_SOUND_TEXTVIEW">
+        <RadioButton
+                android:layout_below="@+id/SETTING_ACTIVITY_SOUND_TEXTVIEW"
+                android:id="@+id/SETTING_ACTIVITY_RADIO1"
+                android:text="수진"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RadioButton
+                android:layout_toRightOf="@id/SETTING_ACTIVITY_RADIO1"
+                android:layout_below="@id/SETTING_ACTIVITY_SOUND_TEXTVIEW"
+                android:id="@+id/SETTING_ACTIVITY_RADIO2"
+                android:text="미진"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RadioButton
+                android:layout_toRightOf="@id/SETTING_ACTIVITY_RADIO2"
+                android:layout_below="@id/SETTING_ACTIVITY_SOUND_TEXTVIEW"
+                android:id="@+id/SETTING_ACTIVITY_RADIO3"
+                android:text="진호"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/explain"
+                android:background="@drawable/textview_rectangle_top"
+                android:layout_below="@id/SETTING_ACTIVITY_RADIO_GROUP"
+                android:text="*재로그인시 변경된 음성이 적용됩니다"/>
+
+        <TextView
+                android:id="@+id/SETTING_ACTIVITY_PRODUCT_SCAN_TEXTVIEW"
+                android:text="상품별스캔"
+                android:background="@drawable/textview_rectangle"
+                android:layout_marginTop="70dp"
+                android:layout_below="@id/explain"
+                android:textSize="30dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="220dp"
+                android:layout_height="50dp"/>
+        <TextView
+                android:textSize="15dp"
+                android:text="마지막 상품 스캔시 배송처리"
+                android:id="@+id/SETTING_ACTIVITY_SCAN_TRANS_TOGGLE_TEXT"
+                android:layout_below="@+id/SETTING_ACTIVITY_PRODUCT_SCAN_TEXTVIEW"
+                android:layout_width="220dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"/>
+        <Switch
+                android:id="@+id/SETTING_ACTIVITY_LAST_SCAN_TRANS_TOGGLE"
+                android:layout_toRightOf="@+id/SETTING_ACTIVITY_SCAN_TRANS_TOGGLE_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_below="@id/SETTING_ACTIVITY_PRODUCT_SCAN_TEXTVIEW"/>
+        <TextView
+                android:text="보류주문 배송처리"
+                android:textSize="15dp"
+                android:id="@+id/SETTING_ACTIVITY_HOLD_TOGGLE_TEXT"
+                android:layout_below="@+id/SETTING_ACTIVITY_LAST_SCAN_TRANS_TOGGLE"
+                android:layout_width="220dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"/>
+        <Switch
+                android:id="@+id/SETTING_ACTIVITY_HOLD_TRANS_TOGGLE"
+                android:layout_toRightOf="@+id/SETTING_ACTIVITY_HOLD_TOGGLE_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_below="@id/SETTING_ACTIVITY_LAST_SCAN_TRANS_TOGGLE"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

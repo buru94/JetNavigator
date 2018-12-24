@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+        <Button
+                android:layout_width="250dp"
+                android:text="재고입고"
+                android:id="@+id/STOCK_FRAGMENT_STOCK_IN_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+
+        <Button
+                android:layout_width="250dp"
+                android:text="재고출고"
+                android:id="@+id/STOCK_FRAGMENT_STOCK_OUT_BTN"
+                android:layout_below="@+id/STOCK_FRAGMENT_STOCK_IN_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="재고조정"
+                android:id="@+id/STOCK_FRAGMENT_STOCK_ARRANGE_BTN"
+                android:layout_below="@+id/STOCK_FRAGMENT_STOCK_OUT_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="재고실사"
+                android:id="@+id/STOCK_FRAGMENT_STOCK_CHECK_BTN"
+                android:layout_below="@+id/STOCK_FRAGMENT_STOCK_ARRANGE_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="재고로그조회"
+                android:id="@+id/STOCK_FRAGMENT_STOCK_LOG_BTN"
+                android:layout_below="@id/STOCK_FRAGMENT_STOCK_CHECK_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+        <Button
+                android:layout_width="250dp"
+                android:text="이지체인배송처리"
+                android:id="@+id/STOCK_FRAGMENT_EZCHAIN_TRANS_BTN"
+                android:layout_below="@id/STOCK_FRAGMENT_STOCK_LOG_BTN"
+                android:background="@drawable/button"
+                style="@style/Menu_Button"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
